@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StopWatch</title>
+  <link rel="icon" href="stopwatch.png" sizes="32x32" type="image/png">
+  <link rel="stylesheet" href="stopwatch.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <h1>stop<span><img style="height: 70px;" src="stopwatchLogo.png" alt=""></span>watch</h1>
+  <div id="container">
+    <div id="display">
+      00:00:00:000
+    </div>
+    <div class="controls">
+      <button onclick="toggleStartStopButtons()" id="startStopButton" class="Start">Start</button>
+      <button onclick="toggleResetLapButtons()" id="resetLapButton" class="reset laps">Reset</button>
+    </div>
+  </div>
+  <div id="laps-display-container">
+    <div id="laps-word">Laps</div>
+    <div id="laps-display"></div>
+  </div>
+
+  <script src="stopwatch.js"></script>
+</body>
+</html>
